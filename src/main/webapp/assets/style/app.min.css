@@ -1,0 +1,23 @@
+/** =============================== 修改 =============================== */
+body {
+    font-family: arial, Hiragino Sans GB, Microsoft Yahei, 微软雅黑, 宋体, '\5b8b\4f53', Tahoma, Arial, Helvetica, STHeiti;
+}
+
+/** =============================== 新增 =============================== */
+
+body{
+	background-color: #111986;
+}
+.navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus{
+	background-color: #112888
+}
+.nav > li.active{
+	background-color: #111987;
+}
+.nav-header{
+	background-image: none;
+	background-color: #222987;
+}
+
+
+

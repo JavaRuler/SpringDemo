@@ -1,0 +1,40 @@
+.div00 {
+	overflow: hidden; 
+	width: 1060px; 
+	padding: 10px 40px 10px 40px ;
+}
+.div0 {
+	width: 300px;
+    float: left;
+}
+.div1 {
+	width: 300px;
+}
+.div2 {
+	width: 100px;
+    float: left;
+}
+.div2 {
+	width: 100px;
+    float: left;
+    margin: 5px;
+}
+.div3 {
+	margin: 5px;
+    width: 50px;
+    float: left;
+}
+.div4 {
+	width: 100px;
+    float: left;
+    margin: 5px;
+}
+
+.div3 button {
+	width: 50px;
+    margin: 8px 2px 8px 2px;
+}
+.div01 {
+	width: 800px;
+    float: left;
+}

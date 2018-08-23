@@ -1,0 +1,211 @@
+/* 移动图标*/
+.file-sortable .file-drag-handle {
+    cursor: default !important;
+}
+
+.m-w-130 {
+    max-width: 130px;
+}
+.border {
+    border: 1px solid #e5e6e7;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.fa-m-r-5 {
+    margin-right: 5px;
+}
+.h-34 {
+	height: 34px;
+}
+
+c
+.checkbox,.radio{
+  padding-left: 5px;
+}
+.checkbox label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 22px !important;
+  user-select: none;
+  font-weight: 700;
+}
+.checkbox label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #bfcbd9;
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+}
+.checkbox label::after {
+  content: '';
+  box-sizing: content-box;
+  z-index: 1;
+  border: 2px solid #fff;
+  border-left: 0;
+  border-top: 0;
+  height: 8px;
+  left: 6px;  
+  position: absolute;
+  top: 2px;
+  width: 4px;
+  transform: rotate(45deg) scaleY(0);
+}
+.checkbox input[type="checkbox"],
+.radio input[type="radio"] {
+  display: none;
+  /*z-index: -1;*/
+}
+.checkbox input[type="checkbox"]:checked + label::before,
+.radio input[type="radio"]:checked + label::before { 
+  background-color: #20a0ff;
+  border: none;
+}
+.checkbox input[type="checkbox"]:checked + label::after,
+.radio input[type="radio"]:checked + label::after {
+  transform: rotate(45deg) scaleY(1);
+  transition: transform .15s cubic-bezier(.71,-.46,.88,.6) .05s;
+}
+.checkbox input[type="checkbox"]:disabled + label,
+.radio input[type="radio"]:disabled + label {
+  color: #d1dbe5;
+  cursor: not-allowed;
+  border: none;
+}
+/*为选中的禁止使用状态*/
+.checkbox input[type="checkbox"]:disabled + label::before,
+.radio input[type="radio"]:disabled + label::before {
+   background-color: #d1dbe5;
+   border: none;
+}
+/*已选中的禁止使用状态*/
+.checkbox input[type="checkbox"]:disabled:checked + label::before,
+.radio input[type="radio"]:disabled:checked + label::before {
+  background-color: #d1dbe5;
+  cursor: not-allowed;
+  border:none;
+}
+/*颜色*/
+ .checkbox-primary input[type="checkbox"]:checked + label::before{
+   background-color: #337ab7;
+   border-color: #337ab7;
+}
+ .checkbox-danger input[type="checkbox"]:checked + label::before{
+   background-color: #d9534f;
+   border-color: #d9534f;
+}
+ .checkbox-info input[type="checkbox"]:checked + label::before{
+   background-color: #5bc0de;
+   border-color: #5bc0de;
+}
+ .checkbox-warning input[type="checkbox"]:checked + label::before{
+   background-color: #f0ad4e;
+   border-color: #f0ad4e;
+}
+ .checkbox-success input[type="checkbox"]:checked + label::before{
+   background-color: #5cb85c;
+   border-color: #5cb85c;
+}
+/*hover 的边框颜色*/
+.checkbox:hover label::before,
+.radio:hover label::before{
+    border: 1px solid #20a0ff;
+}
+
+.checkbox-primary:hover label::before,
+.radio-primary:hover label::before{
+    border-color: #337ab7;
+}
+
+.checkbox-danger:hover label::before,
+.radio-danger:hover label::before {
+    border-color: #d9534f;
+}
+
+.checkbox-info:hover label::before,
+.radio-info:hover label::before {
+    border-color: #5bc0de;
+}
+
+.checkbox-warning:hover label::before,
+.radio-warning:hover label::before {
+    border-color: #f0ad4e;
+}
+
+.checkbox-success:hover label::before,
+.radio-success:hover label::before {
+    border-color: #5cb85c;
+}
+
+/*单选框*/
+.radio label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 22px !important;
+  user-select: none;
+  font-weight: 700;
+}
+.radio label::before {
+  content: '';
+  border: 1px solid #cccccc;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: -1px;
+  box-sizing: border-box;
+}
+.radio label::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  transform: translate(-50%,-50%) scale(0);
+}
+.radio input[type="radio"] {
+  opacity: 0;
+  z-index: 1;
+}
+.radio input[type="radio"]:checked + label::before {
+    border-color: #20a0ff;
+    background: #20a0ff;
+}
+.radio input[type="radio"]:checked + label::after {
+  transform: translate(-50%,-50%) scale(1);
+  transition: transform .15s cubic-bezier(.71,-.46,.88,.6);
+}
+/*颜色项*/
+.radio-primary input[type="radio"]:checked + label::before {
+   border-color: #337ab7;
+   background-color: #337ab7;
+}
+.radio-danger input[type="radio"]:checked + label::before {
+   border-color: #d9534f;
+   background-color: #d9534f;
+}
+.radio-info input[type="radio"]:checked + label::before {
+   border-color: #5bc0de;
+   background-color: #5bc0de;
+}
+.radio-warning input[type="radio"]:checked + label::before {
+   border-color: #f0ad4e;
+   background-color: #f0ad4e;
+}
+.radio-success input[type="radio"]:checked + label::before {
+   border-color: #5cb85c;
+   background-color: #5cb85c;
+}
+/* radio checkbox end*/

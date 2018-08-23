@@ -1,0 +1,18 @@
+.keyDivs {
+	width: 100%;
+	overflow: hidden;
+}
+
+.keyDiv {
+	width: 95%;
+	height:100px; 
+	float: left; 
+}
+.doorDiv {
+	width: 100%;
+	height:100px; 
+	float: left; 
+}
+.keyTbl {
+	width: 100%
+}
