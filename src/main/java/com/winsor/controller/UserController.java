@@ -26,23 +26,25 @@ public class UserController {
 
     @ResponseBody
     @RequestMapping(value = "selectUserAsJson")
-    public List<User> selectUserAsJson(String id){
+    public List<User> selectUserAsJson(String id) {
         List<User> users = new ArrayList<>();
-        Map<String,Object> map = new HashMap<>();
-        map.put("id",id);
+        Map<String, Object> map = new HashMap<>();
+        map.put("id", id);
         users = userService.selectUser(map);
         return users;
     }
 
     @RequestMapping(value = "selectUserAsJsp")
-    public ModelAndView selectUserAsJsp(String id){
+    public ModelAndView selectUserAsJsp(String id) {
         List<User> users = new ArrayList<>();
-        Map<String,Object> map = new HashMap<>();
-        map.put("id",id);
+        Map<String, Object> map = new HashMap<>();
+        map.put("id", id);
         users = userService.selectUser(map);
         ModelAndView model = new ModelAndView();
-        model.addObject("users",users);
+        model.addObject("users", users);
         model.setViewName("index");
         return model;
     }
+
 }
+
